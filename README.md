@@ -4,7 +4,7 @@
 
 The uPLC (Universal Programmable Logic Controller) is a compact (22x32mm) I/O controller powered by the ESP32, designed to automate various tasks around you. So far, three versions have been developed. All versions are generally 24V-tolerant for digital I/O, except for the analog inputs, and feature a wide-range 3.8-24V buck regulator for power input.
 
-The primary purpose of the uPLC is to "smartify" devices by integrating them with [ESPHome](https://esphome.io/). It can also function as a direct, point-to-point PLC, using **ESP-NOW** for wireless communication, replacing traditional wired connections at a cost of latency. 
+The primary purpose of the uPLC is to "smartify" devices by integrating them with [ESPHome](https://esphome.io/). But it can also function as a direct, point-to-point PLC, using **ESP-NOW** for wireless communication, replacing traditional wired connections at a cost of latency. 
 
 ## Available Versions:
 - **[uPLC-Digital](https://github.com/fredriknk/uPLC-digital):** High-speed digital I/O
