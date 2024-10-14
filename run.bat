@@ -1,2 +1,2 @@
 python panelize.py
-pcbnew ./Panel/uPLC-Panel.kicad_pcb
+pcbnew ./CAD/Panel/uPLC-Panel.kicad_pcb

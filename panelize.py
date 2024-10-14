@@ -8,10 +8,10 @@ from itertools import chain
 
 
 ############### Custom config
-board1_path = ".\\uPLC-Analog\\CAD\\uplc-analog\\uplc-analog.kicad_pcb"
-board2_path = ".\\uPLC-Digital\\CAD\\uplc-digital\\uplc-digital.kicad_pcb"
-board3_path = ".\\uPLC-Relay\\CAD\\uplc\\uplc.kicad_pcb"
-output_path = ".\\Panel\\uPLC-Panel.kicad_pcb"
+board1_path = "..\\uPLC-Analog\\CAD\\uplc-analog\\uplc-analog.kicad_pcb"
+board2_path = "..\\uPLC-Digital\\CAD\\uplc-digital\\uplc-digital.kicad_pcb"
+board3_path = "..\\uPLC-Relay\\CAD\\uplc\\uplc.kicad_pcb"
+output_path = ".\\CAD\\Panel\\uPLC-Panel.kicad_pcb"
 
 board_spacing = 2*mm
 
