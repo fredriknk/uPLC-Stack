@@ -13,8 +13,8 @@ The primary purpose of the uPLC is to "smartify" devices by integrating them wit
 
 ### Coming Soon:
 - **uPLC-COMM:** For sensor connections- SPI, I2C, SDI12 support
-- **uPLC-4-20mA:** Current loop for industrial sensors
-- **
+- **uPLC-4_20:** Current loop for industrial sensors
+- **uPLC-TBD:** If you have a good idea give me a message or issue 
 
 ## Specifications
 
@@ -29,7 +29,7 @@ The primary purpose of the uPLC is to "smartify" devices by integrating them wit
 | **Case Size**    | X x X x X mm (TBD)                                                 |
 
 ## uPLC-Stack:
-To facilitate manufacturing and development, I've created a panelized version using **KiKit** scripting. The uPLC-Stack includes two units of each version, making it easier to assemble and test multiple variants in one go.
+To facilitate manufacturing and development, I've created a panelized version using **KiKit** scripting. The uPLC-Stack includes two units of each version, making it easier to assemble and test multiple variants in one go. Im planning on
 
 ### Running the Panelization Script:
 To use the panelization script, clone all the uPLC repositories and organize them in a directory one level back from the uPLC-Stack folder. This allows the KiKit script to automatically pull in all required files for panelizing.
