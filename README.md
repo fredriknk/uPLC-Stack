@@ -1,4 +1,7 @@
 # uPLC - Miniaturized Distributed Monitoring and Control
+
+Quick note, this is then panelization repo, head for the individual repos to get design files.
+
 ### PcbWay Sponsorship
 
 Thanks so much to [PCBWay](https://www.pcbway.com/) for sponsoring my first assembly run for this project, they deliver awesome quality assembly service as always with 6 perfectly soldered dual sided prototypes delivered at my door in less than 2 weeks from ordering. All components perfectly placed and good quality 4 layer pcb's. I love the look and legebility of the 0.9mm inverted silkscreen texts. They even pointed out some reccomended component replacements due to NRND bom items. So Look at this beautiful trio of boards ready for automating every dumb device in my house. 
