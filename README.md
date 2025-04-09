@@ -1,8 +1,11 @@
 # uPLC - Miniaturized Distributed Monitoring and Control (BT/WiFi)
 ## PcbWay Sponsorship
-Thanks so much to PCBWay for sponsoring my first assembly run for this project, they deliver awesome quality as allways with 6 perfectly soldered prototypes delivered fully assembled at my door in less than 2 weeks from ordering. Look at this beautiful trio of boards ready for automating every dumb device in my house thanks to PCBWay. ESP-Home code examples are comming soon.
+
+Thanks so much to [PCBWay](https://www.pcbway.com/) for sponsoring my first assembly run for this project, they deliver awesome quality as allways with 6 perfectly soldered prototypes delivered fully assembled at my door in less than 2 weeks from ordering. Look at this beautiful trio of boards ready for automating every dumb device in my house. 
 ![uPLC-Trio](./PICTURES/uPLC-Trio.png)
 ![uPLC-Trio-Bottom](./PICTURES/uPLC-Trio-Bottom.png)
+
+ESP-Home code examples are comming soon.
 
 The uPLC (Universal Programmable Logic Controller) is a compact (22x32mm) I/O controller powered by the ESP32, designed to automate various tasks around you. So far, three versions have been developed. All versions are generally 24V-tolerant for digital I/O, except for the analog inputs, and feature a wide-range 3.8-24V buck regulator for power input.
 
