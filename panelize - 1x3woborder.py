@@ -21,11 +21,11 @@ board_spacing = 2*mm
 
 ################ KiKit Panel Config (Only deviations from default)
 
-framing={
-		"type": "frame", #only rail on top and bottom
-		"vspace" : "2mm", # space between board and rail
-		"width": "7.5mm" # Width of the rail
-	}
+#framing={
+#		"type": "none", #only rail on top and bottom
+#		"vspace" : "2mm", # space between board and rail
+#		"width": "7.5mm" # Width of the rail
+#	}
 	
 cuts =  {
 		"type": "mousebites",
@@ -35,51 +35,50 @@ cuts =  {
      	"prolong": "0.5mm"
 	}
 tabs = { #Add tabs between board and board as well as board and rail
-		"type":"fixed", #Place them with constant width and spacing 
-  		"vcount": 2, 
-    	"hcount": 2,
+		"type":"fixed", #Place them with constant width and spacing
+  		"vcount": 2,
+#   	"hcount": 2,
 		"vwidth": "2.7mm",
 	}
 
-fiducials = {
-     "type":"3fid",
-     "hoffset": "6mm",
-     "voffset": "6mm",
-     "coppersize": "1mm",
-     "opening": "2mm"
-}
+#fiducials = {
+#     "type":"3fid",
+#     "hoffset": "6mm",
+#     "voffset": "6mm",
+#     "coppersize": "1mm",
+#     "opening": "2mm"
+#}
 
-copperfill = {
-	"type": "hatched",
-	"width": "0.5mm",
- 	"clearance": "2mm"
-	
-}
+#copperfill = {
+#	"type": "hatched",
+#	"width": "0.5mm",
+# 	"clearance": "2mm"
+#}
 
-text = {
-    "type":"simple",
-    "text": "\nuPLC-FullStack - {date}",
-   	"anchor": "ml",
-	"vjustify":"top",
-	"voffset ": "5000mm",
- 	"hoffset ": "5000mm",
-    "orientation": "90deg"
-}
+#text = {
+#    "type":"simple",
+#    "text": "\nuPLC-FullStack - {date}",
+#   	"anchor": "ml",
+#	"vjustify":"top",
+#	"voffset ": "5000mm",
+# 	"hoffset ": "5000mm",
+#    "orientation": "90deg"
+#}
 
 
-tooling = {
-        "type": "3hole",
-        "hoffset": "3mm",
-        "voffset": "3mm",
-        "size": "3mm"
-    }
+#tooling = {
+#        "type": "3hole",
+#        "hoffset": "3mm",
+#        "voffset": "3mm",
+#        "size": "3mm"
+#    }
 
 post={
 	"millradius": "1mm"
 }
 
 # Obtain full config by combining above with default
-preset = ki.obtainPreset([], tabs=tabs, cuts=cuts, framing=framing, tooling=tooling, fiducials=fiducials,copperfill=copperfill,text=text, post=post)
+preset = ki.obtainPreset([], tabs=tabs, cuts=cuts, post=post)
 
 
 ################ Adjusted `panelize_ui#doPanelization`
@@ -116,11 +115,6 @@ placer = BasicGridPosition(board_spacing, board_spacing) #HorSpace, VerSpace
 area1 = panel.appendBoard(board1_path, panelOrigin + placer.position(0,0, None) ,rotationAngle=180*deg, origin=Origin.Center, sourceArea=sourceArea1, netRenamer=netRenamer, refRenamer=refRenamer)
 area2 = panel.appendBoard(board2_path, panelOrigin + placer.position(1,0, area1),rotationAngle=180*deg, origin=Origin.Center, sourceArea=sourceArea2, netRenamer=netRenamer, refRenamer=refRenamer,  inheritDrc=False)
 area3 = panel.appendBoard(board3_path, panelOrigin + placer.position(2,0, area2),rotationAngle=180*deg, origin=Origin.Center, sourceArea=sourceArea3, netRenamer=netRenamer, refRenamer=refRenamer,  inheritDrc=False)
-area4 = panel.appendBoard(board1_path, panelOrigin + placer.position(0,1, area3), origin=Origin.Center, sourceArea=sourceArea1, netRenamer=netRenamer, refRenamer=refRenamer, inheritDrc=False)
-area5 = panel.appendBoard(board2_path, panelOrigin + placer.position(1,1, area4), origin=Origin.Center, sourceArea=sourceArea2, netRenamer=netRenamer, refRenamer=refRenamer,  inheritDrc=False)
-area6 = panel.appendBoard(board3_path, panelOrigin + placer.position(2,1, area5), origin=Origin.Center, sourceArea=sourceArea3, netRenamer=netRenamer, refRenamer=refRenamer,  inheritDrc=False)
-
-
 
 substrates = panel.substrates[substrateCount:] # Collect set of newly added boards
 

@@ -4,6 +4,7 @@ from kikit.panelize import Panel, BasicGridPosition, Origin
 from pcbnewTransition.pcbnew import LoadBoard, VECTOR2I
 from pcbnewTransition import pcbnew
 from itertools import chain
+import os
 
 
 
@@ -13,6 +14,8 @@ board2_path = "..\\uPLC-Digital\\CAD\\uplc-digital\\uplc-digital.kicad_pcb"
 board3_path = "..\\uPLC-Relay\\CAD\\uplc\\uplc.kicad_pcb"
 output_path = ".\\CAD\\Picturestack\\uPLC-Panel.kicad_pcb"
 
+#make the folder if it does not exist
+os.makedirs(os.path.dirname(output_path), exist_ok=True)
 board_spacing = 2*mm
 
 ################ KiKit Panel Config (Only deviations from default)
