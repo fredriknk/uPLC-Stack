@@ -1,6 +1,6 @@
 # uPLC - Miniaturized Distributed Monitoring and Control (BT/WiFi)
 ## PcbWay Sponsorship
-Thanks so much to PCBWay for sponsoring my first assembly run for this project, they deliver awesome quality as allways with 6 perfectly soldered prototypes delivered fully assembled at my door in less than 2 weeks from ordering. Look at this beautiful trio of boards ready for automating every dumb device in my house thanks to PCBWay.
+Thanks so much to PCBWay for sponsoring my first assembly run for this project, they deliver awesome quality as allways with 6 perfectly soldered prototypes delivered fully assembled at my door in less than 2 weeks from ordering. Look at this beautiful trio of boards ready for automating every dumb device in my house thanks to PCBWay. ESP-Home code examples are comming soon.
 ![uPLC-Trio](./PICTURES/uPLC-Trio.png)
 ![uPLC-Trio-Bottom](./PICTURES/uPLC-Trio-Bottom.png)
 
