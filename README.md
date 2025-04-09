@@ -1,5 +1,5 @@
 # uPLC - Miniaturized Distributed Monitoring and Control (BT/WiFi)
-##PcbWay Sponsorship
+## PcbWay Sponsorship
 Thanks so much to pcbway for sponsoring my first assembly run for this project, they deliver awesome quality as allways. Look at this beautiful trio of boards.
 ![uPLC-Trio](./PICTURES/uPLC-Trio.png)
 ![uPLC-Trio-Bottom](./PICTURES/uPLC-Trio-Bottom.png)
